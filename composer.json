@@ -4,11 +4,18 @@
     "extra":{
         "installer-types": ["hermes-api"],
         "installer-paths": {
-            "apis": ["type:hermes-api"]
+            "apis/{$name}/": ["type:hermes-api"]
         }
     },
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:johnrobertporter/composer-api-package.git"
+        }
+    ],
     "require": {
-        "oomphinc/composer-installers-extender": "^1.1"
+        "oomphinc/composer-installers-extender": "^1.1",
+        "john/composer-api-package": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.2"
