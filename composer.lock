@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "735eab493ef75d972cb6929936fbf571",
+    "content-hash": "0ed30f2bd13c870e35dac8618c7f837b",
     "packages": [
         {
             "name": "composer/installers",
@@ -119,6 +119,27 @@
                 "zikula"
             ],
             "time": "2017-04-24T06:37:16+00:00"
+        },
+        {
+            "name": "john/composer-api-package",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnrobertporter/composer-api-package.git",
+                "reference": "53f349146e5e756ba30dc49b2049b2ed0525c472"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnrobertporter/composer-api-package/zipball/53f349146e5e756ba30dc49b2049b2ed0525c472",
+                "reference": "53f349146e5e756ba30dc49b2049b2ed0525c472",
+                "shasum": ""
+            },
+            "type": "hermes-api",
+            "support": {
+                "source": "https://github.com/johnrobertporter/composer-api-package/tree/master",
+                "issues": "https://github.com/johnrobertporter/composer-api-package/issues"
+            },
+            "time": "2017-07-11 08:41:05"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -1616,7 +1637,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "john/composer-api-package": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
