@@ -1,0 +1,16 @@
+{
+    "name": "john/composer-paths",
+    "type": "project",
+    "extra":{
+        "installer-types": ["hermes-api"],
+        "installer-paths": {
+            "apis": ["type:hermes-api"]
+        }
+    },
+    "require": {
+        "oomphinc/composer-installers-extender": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    }
+}
